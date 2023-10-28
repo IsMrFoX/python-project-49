@@ -14,7 +14,6 @@ def main():
         s_num = randint(0, 100)
         expression = str(eval(f'{f_num} {oper} {s_num}'))
         answer = prompt.string(f'Question: {f_num} {oper} {s_num}  ')
-        print(type(answer))
         print(f'Your answer: {answer} ')
         if answer != expression:
             print(f"'{answer}' is wrong answer \
