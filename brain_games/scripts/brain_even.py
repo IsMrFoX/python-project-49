@@ -1,9 +1,11 @@
 import prompt
 from random import randint
 from time import sleep
+from brain_games.cli import welcome_user
 
 
-def start_game_even_odd(user_name):
+def main():
+    user_name = welcome_user()
     count = 3
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while count:
@@ -25,3 +27,7 @@ def start_game_even_odd(user_name):
 
     if not count:
         print(f'Congratulations, {user_name}!')
+
+
+if __name__ == "__main__":
+    main()
