@@ -13,11 +13,11 @@ def main():
         answer = prompt.string(f'Question: {number}  ').lower()
         print(f'Your answer: {answer} ')
         if number % 2 and answer == 'yes':
-            print(f"{answer} is wrong answer ;(. Correct answer was 'no'.")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
             print(f"Let's try again, {user_name}")
             break
         elif number % 2 == 0 and answer == 'no':
-            print(f"{answer} is wrong answer ;(. Correct answer was 'yes'.")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
             print(f"Let's try again, {user_name}")
             break
         else:
