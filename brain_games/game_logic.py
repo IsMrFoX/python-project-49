@@ -33,3 +33,17 @@ def check_progression_number(correct_value, answer):
         return True, 'Correct!'
     return False, f"'{answer}' is wrong answer \
 ;(. Correct answer was '{correct_value}'."
+
+
+def check_prime(value, answer):
+    count = 0
+    for i in range(2, value):
+        if value % i == 0:
+            count += 1
+
+    if count == 0 and answer == 'yes':
+        return True, 'Correct!'
+    elif count > 0 and answer == 'no':
+        return True, 'Correct!'
+    return False, f"'{answer}' is wrong answer \
+;(. Correct answer was '{count==0}'."
