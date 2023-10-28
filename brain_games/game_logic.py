@@ -26,3 +26,10 @@ def check_gcd_number(num1, num2, answer):
         return True, 'correct!'
     return False, f"'{answer}' is wrong answer \
 ;(. Correct answer was '{gcd_result}'."
+
+
+def check_progression_number(correct_value, answer):
+    if correct_value == answer:
+        return True, 'Correct!'
+    return False, f"'{answer}' is wrong answer \
+;(. Correct answer was '{correct_value}'."
