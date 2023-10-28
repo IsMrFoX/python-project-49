@@ -23,7 +23,7 @@ def main():
         else:
             print('correct!')
             count -= 1
-            sleep(1)
+            sleep(0.5)
 
     if not count:
         print(f'Congratulations, {user_name}!')
