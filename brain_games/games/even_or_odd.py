@@ -6,6 +6,7 @@ from time import sleep
 
 def start_even_odd_game(user_name):
     num_of_questions = 3
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     while num_of_questions:
         number = randint(0, 999999)
         answer = prompt.string(f'Question: {number}  ').lower()
