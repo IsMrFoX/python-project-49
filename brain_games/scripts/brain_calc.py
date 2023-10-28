@@ -1,12 +1,12 @@
 import prompt
-from random import randint
+from random import randint, sample
 from time import sleep
 from brain_games.cli import welcome_user
 
 
 def main():
     user_name = welcome_user()
-    operators = ['+', '-', '*']
+    operators = sample(['+', '-', '*'], 3)
     print('What is the result of the expression?')
     while operators:
         oper = operators.pop(0)
@@ -16,8 +16,8 @@ def main():
         answer = prompt.string(f'Question: {f_num} {oper} {s_num}  ')
         print(f'Your answer: {answer} ')
         if answer != expression:
-            print(f"'{answer}' is wrong answer \
-                  ;(. Correct answer was '{expression}'.")
+            print(f"""'{answer}' is wrong answer \
+;(. Correct answer was '{expression}'.""")
             print(f"Let's try again, {user_name}!")
             break
         else:
