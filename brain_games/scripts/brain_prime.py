@@ -1,9 +1,11 @@
 from brain_games.cli import welcome_user
 from brain_games.games.single_number_game import start_game
 from brain_games.game_logic import check_prime
+from brain_games.scripts.brain_games import main as greeting
 
 
 def main():
+    greeting()
     user_name = welcome_user()
     game_greeting = '"yes" if given number is prime. Otherwise answer "no".'
     start_game(user_name, game_greeting, check_prime)
