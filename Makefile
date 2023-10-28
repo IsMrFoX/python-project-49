@@ -16,3 +16,6 @@ publish:
 
 package-install:
 		python3 -m pip install --user dist/*.whl
+
+flake: 
+		 poetry run flake8 brain_games
